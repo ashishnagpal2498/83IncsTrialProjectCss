@@ -3,17 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <title>Trial Project</title>
-    <link href="Bootstrap/dist/css/bootstrap.css" rel="stylesheet">
     <script src="Bootstrap/dist/js/jquery-3.2.1.js"></script>
-    <script src="Bootstrap/dist/js/bootstrap.js"></script>
     <script src="https://kit.fontawesome.com/a48163d91f.js" crossorigin="anonymous"></script>
+    <link href="index_sideMenu.css" rel="stylesheet">
+    <link href="main_container.css" rel="stylesheet">
 </head>
 <body>
-<section id="side-menu">
-    <div class="outer-side-menu">
+<div class="outer-side-menu">
+        <div class="icons-side-menu">
+            <div id="main-logo" class="side-menu-logo" align="center"><img src="logo.png" width="85%" height="85%"></div>
+            <ul>
+                <li>
+                    <a href="#"><i class="fas fa-user-circle"></i></a>
+                </li>
+                <li>
+                    <a href="#" ><i class="fas fa-window-maximize"></i></a>
+                </li>
+                <li>
+                    <a id="msg" href="#msg"><i class="far fa-comment-alt"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="far fa-chart-bar"></i></a>
+                </li>
+                <li>
+                    <a href="#" ><i class="fas fa-cog"></i></a>
+                </li>
+            </ul>
 
+        </div>
+        <div class="content-side-menu">
+            <h3 class="content-side-menu-heading">Site Manager</h3>
+            <div class="content-side-menu-options">
+                <p>DIRECTORIES</p>
+                <ul>
+                    <li>
+                        <a href="#"><i class="fas fa-ellipsis-v menu-icon"></i>Journel</a>
+                    </li>
+
+                    <li class="active">
+                        <a href=""><i class="fas fa-ellipsis-v menu-icon"></i>Local Business</a>
+                    </li>
+                </ul>
+            </div>
+<!--            Directories-->
+            <div class="content-side-menu-pages">
+                <p>PAGES</p>
+                <ul>
+                    <li><a href=""> <i class="far fa-sticky-note menu-icon"></i> Home</a></li>
+                    <li><a href=""> <i class="far fa-sticky-note menu-icon"></i> About Us</a></li>
+                    <li><a href=""> <i class="far fa-sticky-note menu-icon"></i> Advertise with Us</a></li>
+                    <li><a href=""> <i class="far fa-sticky-note menu-icon"></i> FAQ</a></li>
+                    <li><a href=""> <i class="far fa-sticky-note menu-icon"></i> Privacy</a></li>
+                    <li><a href=""> <i class="far fa-sticky-note menu-icon"></i> Terms Of Use</a></li>
+                    <li><a href=""> <i class="far fa-sticky-note menu-icon"></i> Contact</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
-</section>
+<div class="main-container">
+    <div class="upper-nav">
+        <div class="upper-nav-heading">
+            <p>Local Business</p>
+        </div>
+        <div class="upper-nav-search-bar">
+
+        </div>
+        <div class="upper-nav-settings-icon">
+
+        </div>
+        <div class="upper-nav-add-icon">
+
+        </div>
+    </div>
+        <ul class="nav-list">
+            <li><a href=""> Listings</a></li>
+            <li><a href=""> Categories</a></li>
+            <li><a href=""> Custom Fields</a></li>
+        </ul>
+</div>
 
 </body>
 </html>
