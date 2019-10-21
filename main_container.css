@@ -28,6 +28,9 @@
     margin: 0 1%;
     flex: 0 0 4.5%;
     height: 45px;
+    font-size: 20px;
+    color: white;
+    padding: 13px;
     align-items: center;
     background-color: gray;
     border-radius: 10px;
@@ -35,7 +38,7 @@
 }
 .upper-nav-add-icon{
     flex: 0 0 7%;
-    background-color: red;
+    background-color: #f0765f;
     height: 45px;
     border-radius: 10px;
 }
@@ -43,7 +46,8 @@
     flex: 0 0 100%;
     padding: 10px 0;
     margin: 15px 0;
-    font-size: 17px;
+    font-size: 18px;
+    color: #a9aaaf;
     font-weight: 200;
     border-bottom: 1px solid #a9aaaf;
     list-style-type: none;
@@ -52,5 +56,83 @@
 .nav-list li{
     display: inline-block;
     width: auto;
-    padding: 0 10px 0 0 ;
+    padding: 0 25px 0 0 ;
+}
+.nav-list li a.active{
+    color: black;
+    position: relative;
+}
+.nav-list li a.active:after{
+    content: '';
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+    background-color: #2d48c5;
+    width: 60px;
+    height: 3.5px;
+}
+
+/*Stats*/
+.stats{
+    flex: 0 0 100%;
+    display: flex;
+    margin: 15px 0;
+}
+.logo{
+    flex: 0 0 7%;
+}
+.logo-setts{
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    font-size: 25px;
+    border-radius: 100px;
+    box-shadow: 0 0 2px 2px rgba(0,0,0,0.1);
+}
+.number-stats{
+    flex: 0 0 55%;
+}
+.num-setts{
+    font-size: 20px;
+    font-weight: bold;
+}
+.verify-stats{
+    flex: 0 0 18%;
+    margin: 0 1%;
+}
+.my-icons-setts{
+    margin-right: 7%;
+}
+.activation-stats{
+    margin: 0 1%;
+    flex: 0 0 18%;
+}
+.text-setts{
+    color:#a9aaaf;
+    padding-left: 35px;
+}
+.image-div{
+    flex: 0 0 100%;
+    margin: 20px 0;
+}
+.image-div img{
+    object-fit: contain;
+}
+.headings-list{
+    flex: 0 0 100%;
+    margin: 0;
+    display: flex;
+    list-style-type: none;
+    border-bottom: 1px solid #a9aaaf;
+}
+li.one{
+    flex: 0 0 50%;
+    margin: 0 2%;
+}
+li.two{
+    margin: 0 2%;
+    flex: 0 0 10%;
+}
+li.three{
+    flex: 0 0 30%;
 }
