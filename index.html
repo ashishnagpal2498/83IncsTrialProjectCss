@@ -12,12 +12,12 @@
 <div class="outer-side-menu">
         <div class="icons-side-menu">
             <div id="main-logo" class="side-menu-logo" align="center"><img src="logo.png" width="85%" height="85%"></div>
-            <ul>
+            <ul class="side-menu-icons">
                 <li>
                     <a href="#"><i class="fas fa-user-circle"></i></a>
                 </li>
                 <li>
-                    <a href="#" ><i class="fas fa-window-maximize"></i></a>
+                    <a href="#"  style="color: #2d48c5"><i class="fas fa-window-maximize"></i></a>
                 </li>
                 <li>
                     <a id="msg" href="#msg"><i class="far fa-comment-alt"></i></a>
@@ -59,20 +59,36 @@
                 </ul>
             </div>
         </div>
+    <div class="notification-icon">
+        <div class="question-mark-icon">
+            ?
+        </div>
+        <div class="user-noti-icon btn btn-dark">
+            CK
+            <div class="noti-bell">3</div>
+        </div>
     </div>
+</div>
+</div>
 <div class="main-container">
     <div class="upper-nav">
         <div class="upper-nav-heading">
             <p>Local Business</p>
         </div>
         <div class="upper-nav-search-bar">
-
+           <div class="search-bar-div">
+            <i class="fa fa-search" style="color: #95969b;margin:0 4px 0 3px"></i>
+            <input type="text" placeholder="Search" class="input-box-search">
+            <a href="#"> <i class="fas fa-chevron-down" style="color:#95969b;font-size: 11px "></i> </a>
+            </div>
         </div>
         <div class="upper-nav-settings-icon">
             <i class="fa fa-cog"></i>
         </div>
         <div class="upper-nav-add-icon">
-
+            <a href="#" style="border-radius: 10px;font-size: 17px;color: white;text-align: center;padding-top: 13px;position: absolute;height: 100%;width: 50%;top: 0; background-color: #f58a75;left: 0"><i class="fa fa-plus"></i></a>
+            <a href="#" style="border-radius: 10px;color: white;text-align: center;padding-top: 17px;position: absolute;height: 100%;width: 50%;top: 0;margin-left: 3px;right: 0"><i class="fas fa-chevron-down" style="padding-left: 3px;font-size: 13px"></i>
+            </a>
         </div>
     </div>
         <ul class="nav-list">
@@ -109,10 +125,71 @@
         <img src="bargraph.png" width="100%" height="100%">
     </div>
         <ul class="headings-list">
-            <li class="one">Business</li>
-            <li class="two">Status/Modified</li>
-            <li class="three">Stats</li>
+            <li class="one">Business <i class="fas fa-sort-down data-main-icons"></i></li>
+            <li class="two">Status/Modified <i class="fas fa-sort-down data-main-icons"></i></li>
+            <li class="three">Stats <i class="fas fa-sort-down data-main-icons"></i></li>
         </ul>
+<!--    Items List -->
+    <ul class="data-items-list" id="list-items">
+        <!--      List of Data Items-->
+        <li>
+            <div class="list-item-image"><img src="starbucks_logo.gif" class="data-row-image"> </div>
+            <div class="list-item-text-heading">
+                <h3>StarBucks Coffee</h3>
+                <p>Coffee and Tea</p>
+            </div>
+            <div class="status">
+                <div><span class="status-icon">Draft</span></div>
+                <p class="under-menu-heads">13/10/2019 4:30pm</p>
+            </div>
+            <div class="list-item-stats">
+                <div class="stats-stars">
+                    <p>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star star-color"></i>
+                        <i class="fas fa-star star-color"></i>
+                    </p>
+                    <p class="under-menu-heads">
+                        101 reviews
+                    </p>
+
+                </div>
+                <div class="stats-views">
+                    <p>
+                        <span class="stats-view-heading">198K</span>
+                        <span class="stats-view-green green-checked small-text-stats">81% <i class="fas fa-arrow-up small-text-stats-icon"></i></span>
+                    </p>
+                    <p class="under-menu-heads">
+                        Total Views
+                    </p>
+                </div>
+                <div class="stats-total-action">
+                    <p>
+                        <span class="stats-view-heading">89</span>
+                        <span class="stats-view-green red-unchecked small-text-stats">81% <i class="fas fa-arrow-up small-text-stats-icon"></i></span>
+                    </p>
+                    <p class="under-menu-heads">
+                        Total Action
+                    </p>
+                </div>
+            </div>
+            <div class="list-item-menu">
+                <i onclick="displayMenu()" class="fas fa-ellipsis-h"></i>
+                <!--                                <div class="mydropdown-menu" id="dropdown-menu">-->
+                <!--                                                            <ul class="dropdown-list">-->
+                <!--                                                                <li>Photos/Videos</li>-->
+                <!--                                                                <li>Products</li>-->
+                <!--                                                                <li>Services</li>-->
+                <!--                                                                <li>Coupons</li>-->
+                <!--                                                                <li>User Review</li>-->
+                <!--                                                            </ul>-->
+                <!--                            </div>-->
+            </div>
+        </li>
+    </ul>
+
 </div>
 
 </body>

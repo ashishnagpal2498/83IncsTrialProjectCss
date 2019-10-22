@@ -3,39 +3,50 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background-color: #f7f7fa;
+}
 a{
     color: inherit;
     text-decoration: none;
 }
 .outer-side-menu{
     display: inline-flex;
+    position: relative;
     width: 20%;
-    height: 600px;
+    height: 800px;
     flex-wrap: wrap;
     box-shadow: 0 0 5px 5px rgba(0,0,0,0.1);
 
 }
 .icons-side-menu{
-    flex: 0 0 25%;
+    flex: 0 0 23%;
     max-width: 25%;
     align-items: center;
 }
 .icons-side-menu ul{
     list-style-type: none;
     margin: 0;
-    padding-left: 25px;
+    padding-left: 20px;
+    color: #a9aaaf;
     align-items: center;
     font-size: 27px;
 }
 .icons-side-menu ul li{
     padding: 17px 0;
 }
+.icons-side-menu ul li:hover{
+    color: #2d48c5;
+}
+.icons-side-menu ul li:visited{
+    color: #2d48c5;
+}
 .side-menu-logo{
     width: 100%;
 }
 .content-side-menu{
-    flex: 0 0 70%;
-    margin-left: 3% ;
+    flex: 0 0 76%;
+    margin-left: 1% ;
     margin-top: 5% ;
     padding: 10px;
 
@@ -44,25 +55,31 @@ a{
 
 }
 .content-side-menu-options{
-    margin-top: 20px;
+    margin-top: 35px;
 }
 .content-side-menu-options ul{
     list-style-type: none;
+    margin-top: 13px;
 }
 .content-side-menu-options ul li{
-    margin: 10px 0;
-    padding: 10px 0;
+    margin: 1px 0;
+    border-radius: 5px;
+    padding: 8px 0;
     font-size: 17px;
     background-color: #ebedf9;
 
 }
 .content-side-menu-options ul li i{
-    margin: 0 10px;
+    margin: 0 15px;
 
+}
+.content-side-menu-pages{
+    margin-top: 30px;
 }
 .content-side-menu-pages ul{
     list-style-type: none;
     margin-left: 10px;
+
 }
 .content-side-menu-pages ul li{
     margin: 20px 0;
@@ -74,4 +91,60 @@ a{
 .content-side-menu-options ul li.active{
     color: white;
     background-color: #2d48c5;
+}
+
+
+/*Icons*/
+.notification-icon{
+    position: absolute;
+    bottom: 0;
+    left: 25px;
+    width: 200px;
+    height: 100px;
+}
+.question-mark-icon{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 10px;
+    box-sizing: border-box;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 100px;
+    padding: 2px;
+    text-align: center;
+}
+.user-noti-icon{
+    position: absolute;
+    width: 50px;
+    bottom: 10px;
+    height: 50px;
+    padding-top: 15px;
+    color: white;
+    padding-bottom:10px ;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 100px;
+    text-align: center;
+}
+.noti-bell{
+    position: absolute;
+    right: -8px;
+    top: 0;
+    text-align: center;
+    font-size: 10px;
+    padding: 2px;
+    background-color: red;
+    color: white;
+
+    border-radius: 100px;
+    width: 17px;
+    height: 17px;
+}
+.btn{
+    cursor: pointer;
+    border-radius: 100px;
+}
+.btn-dark{
+    background-color: gray;
 }

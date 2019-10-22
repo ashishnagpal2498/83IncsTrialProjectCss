@@ -21,8 +21,31 @@
     align-items: center;
 }
 .upper-nav-search-bar{
-    flex: 0 0 30%;
-    margin: 0 1%;
+    flex: 0 0 32%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.search-bar-div{
+    width: 245px;
+    padding: 9px;
+    margin-left: 28%;
+
+    border-radius: 15px;
+    border: 1px solid rgba(0,0,0,0.2);
+    background-color: #f2f2f5;
+}
+.search-bar-div a{
+    color: black;
+    border-left: 1px solid gray;
+    padding-left: 5px;
+}
+.input-box-search{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 177px;
+    display: inline-block;
 }
 .upper-nav-settings-icon{
     margin: 0 1%;
@@ -41,6 +64,8 @@
     background-color: #f0765f;
     height: 45px;
     border-radius: 10px;
+    position: relative;
+    font-size: 15px;
 }
 .nav-list{
     flex: 0 0 100%;
@@ -60,6 +85,7 @@
 }
 .nav-list li a.active{
     color: black;
+    font-weight: bold;
     position: relative;
 }
 .nav-list li a.active:after{
@@ -120,19 +146,117 @@
 }
 .headings-list{
     flex: 0 0 100%;
+    align-content: start;
     margin: 0;
+    color: #a9aaaf;;
     display: flex;
     list-style-type: none;
     border-bottom: 1px solid #a9aaaf;
 }
 li.one{
-    flex: 0 0 50%;
-    margin: 0 2%;
+    flex: 0 0 28%;
+    margin: 0 2% 0 0;
 }
 li.two{
-    margin: 0 2%;
-    flex: 0 0 10%;
+    margin: 0 2% 0 0;
+    flex: 0 0 16%;
 }
 li.three{
-    flex: 0 0 30%;
+    flex: 0 0 32%;
+}
+
+/*Data List*/
+.data-items-list{
+    flex: 0 0 100%;
+    display: flex;
+
+    margin-top: 10px;
+}
+.data-items-list li{
+    flex: 0 0 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+.list-item-image{
+    flex: 0 0 7%;
+}
+.data-row-image{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.list-item-text-heading{
+    flex: 0 0 21%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-left: 2%;
+}
+.status{
+    flex: 0 0 16%;
+    margin: 0 0 0 2%;
+}
+.status-icon{
+    display: block;
+    font-size: 12px;
+    width: 40px;
+    color: red;
+    border: 1px solid red;
+    padding: 0 4px;
+    border-radius: 10px;
+
+}
+.list-item-stats{
+    flex: 0 0 47%;
+    margin: 0 1% 0 2%;
+    display: flex;
+}
+.stats-stars{
+    flex: 0 0 28%;
+    margin-right:2%;
+    font-size: 14px;
+    padding-top: 3px;
+}
+
+.green-checked{
+    border-color: lightgreen;
+    color: lightgreen;
+}
+.red-unchecked{
+    border-color: #f58a75;
+    color: #f58a75;
+    font-size: 15px;
+}
+.my-icons-setts{
+    margin-right: 10px;
+}
+.under-menu-heads{
+    font-size: 14px;
+    color: gray;
+    padding-top: 6px;
+}
+.star-color{
+    color: gray;
+}
+.stats-view-heading{
+    font-size: 18px;
+    font-weight: 300;
+}
+.small-text-stats{
+    font-size: 13px;
+    margin-left: 3px;
+    padding-top: 6px;
+    font-weight: bold;
+}
+
+.stats-views{
+    flex: 0 0 28%;
+    margin: 0 2%;
+}
+.stats-total-action{
+    flex: 0 0 28%;
+    margin: 0 2%;
+}
+.list-item-menu{
+    flex: 0 0 7%;
 }
